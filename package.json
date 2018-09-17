@@ -1,0 +1,36 @@
+{
+  "name": "js-benchmarks",
+  "private": true,
+  "version": "1.0.0",
+  "description": "General purpose JavaScript benchmarks",
+  "keywords": [
+    "js",
+    "javascript",
+    "benchmark",
+    "optimization"
+  ],
+  "homepage": "https://github.com/chbrown/js-benchmarks",
+  "repository": "github:chbrown/js-benchmarks",
+  "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
+  "license": "MIT",
+  "dependencies": {
+    "benchmark": "2.1.4",
+    "js-yaml": "3.12.0",
+    "microtime": "2.1.8"
+  },
+  "devDependencies": {
+    "@types/benchmark": "1.0.31",
+    "@types/js-yaml": "3.11.2",
+    "@types/node": "10.9.2",
+    "ava": "1.0.0-beta.7",
+    "coveralls": "3.0.2",
+    "nyc": "12.0.2",
+    "typescript": "3.0.3"
+  },
+  "scripts": {
+    "prepare": "tsc",
+    "pretest": "tsc",
+    "test": "nyc ava",
+    "clean": "tsc -d --listEmittedFiles | sed 's/^TSFILE: //' | xargs rm -v"
+  }
+}
