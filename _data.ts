@@ -41,58 +41,61 @@ export const arrays: any[][] = [
 ]
 
 export const deep: object = {
-  list: {
-    OoVwOM: {
+  list: [
+    {
       id: 'OoVwOM',
       parent: 'pTlmbh',
       name: 'New node',
-      created_at: 1384289621,
+      created_at: null,
     },
-    aHxe8k: {
+    {
       id: 'aHxe8k',
       parent: 'Fhs2hL',
       name: 'hjkhjkhjk',
       created_at: 1384354593,
     },
-    Fhs2hL: {
+    null,
+    {
       id: 'Fhs2hL',
       parent: 'root',
       name: 'test',
       created_at: 1383403881,
     },
-    HYPSgv: {
+    {
       id: 'HYPSgv',
       parent: 'OoVwOM',
       name: 'New node',
       created_at: 1384342657,
     },
-    osFIMf: {
+    {
       id: 'osFIMf',
       parent: 'root',
       name: 'New node',
       created_at: 1384354584,
     },
-    PsovXE: {
+    {
       id: 'PsovXE',
       parent: 'root',
       name: 'hjkhjkhjk',
       created_at: 1384354589,
     },
-    pTlmbh: {
+    {
       id: 'pTlmbh',
       parent: 'Fhs2hL',
       name: 'New node',
       created_at: 1384289277,
     },
-    RbXhdJ: {
+    {
       id: 'RbXhdJ',
-      parent: 'root',
+      parent: null,
       name: 'empty',
-      created_at: 1384359806,
+      created_at: null,
     },
-  },
+    null,
+  ],
   maps: {
     parent: {
+      Kwn7jU: null,
       pTlmbh: {
         OoVwOM: {
           id: 'OoVwOM',
@@ -141,6 +144,7 @@ export const deep: object = {
           created_at: 1384359806,
         },
       },
+      fWE9hM: null,
       OoVwOM: {
         HYPSgv: {
           id: 'HYPSgv',
