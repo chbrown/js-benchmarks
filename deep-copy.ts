@@ -1,7 +1,7 @@
 import * as Benchmark from 'benchmark'
 
 import {formatBenchmark, assertEvery} from './_index'
-import {deep} from './_data'
+import data from './data/deep'
 
 const hasOwnProperty = Object.prototype.hasOwnProperty
 
@@ -72,6 +72,6 @@ const suite = new Benchmark.Suite()
   console.log(`\nFastest: ${fastest_name.join(', ')}`)
 })
 alternatives.forEach(f => {
-  suite.add(f.name, () => f(deep))
+  suite.add(f.name, () => f(data))
 })
 suite.run()

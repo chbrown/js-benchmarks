@@ -1,7 +1,7 @@
 import * as Benchmark from 'benchmark'
 
 import {formatBenchmark, assertEvery} from './_index'
-import {arrays} from './_data'
+import data from './data/arrays'
 
 // alternatives
 
@@ -51,7 +51,7 @@ const suite = new Benchmark.Suite()
 })
 alternatives.forEach(f => {
   suite.add(f.name, () => {
-    assertEvery(arrays, f)
+    assertEvery(data, f)
   })
 })
 suite.run()
